@@ -5,5 +5,5 @@ import { PaginatedItems } from '../component/paginatedItems';
 
 export const ProductList = () => {
 	const isLoading = useSelector((state) => state.isLoading);
-	return <>{isLoading ? <Loader /> : <PaginatedItems itemsPerPage={6} />};</>;
+	return <> {isLoading ? <Loader /> : <PaginatedItems itemsPerPage={6} />}</>;
 };
